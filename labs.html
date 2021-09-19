@@ -34,6 +34,17 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script type="text/javascript"> 
+        function classDay(d){ 
+          var dates = ["September 7","September 14","September 21","September 28","October 5","October 19","October 26","November 2","November 9","November 16","November 23","November 30","December 7"]
+          if (d>=0 && d<28)
+            return dates[d];
+          else 
+            return "TBA";
+         } 
+         var cday=0;
+      </script>
+
 </head>
 
 <body>
@@ -123,7 +134,118 @@
           </div> -->
 
     <!-- Main Content -->
-    <div class="container">
+    <div class="main-content" id="schedule">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+            	<h1 class="text-center">Class Schedule</h1>
+
+                <p>
+                Here you can find the <em><strong>tentative</strong></em> schedule of the lab (which might change as the semester progresses). 
+                </p>
+                <p>
+                The slides and other required material will be uploaded here before each lab. It is advised that you carry your laptops to every lab for hands-on learning. 
+                </p>
+
+                <div class="row class-entry content-desktop">
+                    <div class="col-lg-2 post-preview">
+                        <strong>Class Details</strong>
+                    </div>
+                    <div class="col-lg-7 post-preview">
+                        <strong>Info</strong>
+                    </div>
+                    <div class="col-lg-3 post-preview">
+                        <strong>Readings</strong>
+                    </div>
+                </div>
+
+                <!--            LAB 1           -->
+                <div class="row class-entry">
+                    <script type="text/javascript">document.write("<a id=\"class"+(cday+1)+"\"></a>"); </script>
+                    <div class="col-lg-2 post-preview">
+                        <h3 class="post-subtitle">Lab <script type="text/javascript">document.write(cday+1)</script></h3>
+                        <strong>Introduction</strong>
+                        <p class="post-meta"><script type="text/javascript"> document.write(classDay(cday));cday++;</script></p>
+                    </div>
+                    <div class="col-lg-7 post-preview">
+                        <p class="post-content"> In the first lab we introduced the general lab expectations and an overall plan of what 
+                            we will cover throughout the semester during lab sessions. We introduced the outline of Project 1 and 
+                            its deliverables. We also setup the required infrastructure for the project. 
+                        </p>
+                    </div>
+                    <div class="col-lg-3 post-preview">
+                        <ul>
+                            <li><a tabindex="-1" href="labs/CS460_Lab1.pdf">Slides</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--            LAB 2           -->
+                <div class="row class-entry">
+                    <script type="text/javascript">document.write("<a id=\"class"+(cday+1)+"\"></a>"); </script>
+                    <div class="col-lg-2 post-preview">
+                        <h3 class="post-subtitle">Lab <script type="text/javascript">document.write(cday+1)</script></h3>
+                        <strong>ER Modelling</strong>
+                        <p class="post-meta"><script type="text/javascript"> document.write(classDay(cday));cday++;</script></p>
+                    </div>
+                    <div class="col-lg-7 post-preview">
+                        <p class="post-content"> In our second lab discussed about the ER model.   
+                        </p>
+                    </div>
+                    <div class="col-lg-3 post-preview">
+                        <ul>
+                            <li><a tabindex="-1 target="_blank" href="labs/CS460_Lab2.pdf">Slides</a></li>
+                            <li><a tabindex="-1" target="_blank" href="labs/CS460_Lab2_exercise.pdf">Lab 2 Exercise</a></li>   
+                            <li><a tabindex="-1" target="_blank" href="labs/CS460_Lab2_solution.pdf">Lab 2 Exercise Solution</a></li>
+                        </ul>
+                    </div>
+                </div>                
+
+                <!--            LAB 3           -->
+                <div class="row class-entry">
+                    <script type="text/javascript">document.write("<a id=\"class"+(cday+1)+"\"></a>"); </script>
+                    <div class="col-lg-2 post-preview">
+                        <h3 class="post-subtitle">Lab <script type="text/javascript">document.write(cday+1)</script></h3>
+                        <strong>ER Modelling</strong>
+                        <p class="post-meta"><script type="text/javascript"> document.write(classDay(cday));cday++;</script></p>
+                    </div>
+                    <div class="col-lg-7 post-preview">
+                        <p class="post-content"> In the third lab we will discuss about basic SQL setup, data cleaning and transforming 
+                            schema to Database tables. 
+                        </p>
+                    </div>
+                    <div class="col-lg-3 post-preview">
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                </div>              
+                
+                <!--            LAB 4           -->
+                <div class="row class-entry">
+                    <script type="text/javascript">document.write("<a id=\"class"+(cday+1)+"\"></a>"); </script>
+                    <div class="col-lg-2 post-preview">
+                        <h3 class="post-subtitle">Lab <script type="text/javascript">document.write(cday+1)</script></h3>
+                        <strong>ER Modelling</strong>
+                        <p class="post-meta"><script type="text/javascript"> document.write(classDay(cday));cday++;</script></p>
+                    </div>
+                    <div class="col-lg-7 post-preview">
+                        <p class="post-content"> In the fourth lab we will discuss how to connect the back-end/DB to a 
+                            simple front-end UI.   
+                        </p>
+                    </div>
+                    <div class="col-lg-3 post-preview">
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                </div>              
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="container">
         <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
 
@@ -180,119 +302,10 @@
                             </div>
 
                             <br>
-                            <!-- <div class="post-preview">
-                                <h1 class="post-subtitle">
-                                   Lab 5
-                                </h1>
-                                <p class="post-content"> In the fifth lab we discussed about the storage layer and B+ trees.   
-                                </p>
-                                <br>
-                                <h4>Readings</h4>
-
-                                    <a style="font-size:18px; text-decoration: underline;" href="labs/lab5sol_corrected.pdf">Exercises & Solutions</a>
-                            </div> -->
-
-                            <!--<br>
-                            <div class="post-preview">
-                                <h1 class="post-subtitle">
-                                   Lab 6
-                                </h1>
-                                <p class="post-content"> In the sixth lab we discussed about hashing. You can find the solution in the corresponding lab recording.   
-                                </p>
-                                <br>
-                                <h4>Readings </h4>
-
-                                    <a style="font-size:18px; text-decoration: underline;" href="labs/lab6.pdf">Exercises</a>
-                            </div>
-
-                            <br>
-                            <div class="post-preview">
-                                <h1 class="post-subtitle">
-                                   Lab 7
-                                </h1>
-                                <p class="post-content">In the seventh lab we discussed about the evaluation of relational operators.   
-                                </p>
-                                <br>
-                                <h4>Readings</h4>
-
-                                    <a style="font-size:18px; text-decoration: underline;" href="labs/lab7_sol.pdf">Exercises & Solutions</a>
-                            </div>
-
-                            <br>
-                            <div class="post-preview">
-                                <h1 class="post-subtitle">
-                                   Lab 8
-                                </h1>
-                                <p class="post-content">In the eighth lab we discussed about PA2.   
-                                </p>
-                                <br>
-                       
-                            </div>
-
-                            <br>
-                            <div class="post-preview">
-                                <h1 class="post-subtitle">
-                                   Lab 9
-                                </h1>
-                                <p class="post-content">Lab 9 was a hacking session for PA1.3.   
-                                </p>
-                                <br>
-                       
-                            </div>
-
-                            <br>
-                            <div class="post-preview">
-                                <h1 class="post-subtitle">
-                                   Lab 10
-                                </h1>
-                                <p class="post-content">In Lab 10 we discussed about functional dependencies and Normal Forms.   
-                                </p>
-                                <br>
-                       
-                            </div>
-
-                            <br>
-                            <div class="post-preview">
-                                <h1 class="post-subtitle">
-                                   Lab 11
-                                </h1>
-                                <p class="post-content">In Lab 11 we discussed about Transaction Management.   
-                                </p>
-                                <br>
-                                <h4>Readings</h4>
-
-                                    <a style="font-size:18px; text-decoration: underline;" href="labs/lab11.pdf">Exercise & Solution</a>
-                       
-                            </div>
-
-                            <br>
-                            <div class="post-preview">
-                                <h1 class="post-subtitle">
-                                   Lab 12
-                                </h1>
-                                <p class="post-content">Lab 12 was a hacking session for PA2   
-                                </p>
-                                
-                            </div>
-
-                            <br>
-                            <div class="post-preview">
-                                <h1 class="post-subtitle">
-                                   Lab 13
-                                </h1>
-                                <p class="post-content">In Lab 13 we discussed about the ARIES recovery algorithm.   
-                                </p>
-                                <br>
-                                <h4>Readings</h4>
-
-                                    <a style="font-size:18px; text-decoration: underline;" href="labs/lab13_sol.pdf">Exercises & Solutions</a>
-                       
-                            </div>
-                        </p> -->
-
+                            
                 </div>
         </div>
-    </div>
+    </div> -->
 
     <hr>
 
